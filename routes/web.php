@@ -42,6 +42,10 @@ Route::post('system-management/state/search', 'StateController@search')->name('s
 Route::resource('system-management/city', 'CityController');
 Route::post('system-management/city/search', 'CityController@search')->name('city.search');
 
+Route::resource('system-management/company', 'CompanyController');
+Route::post('system-management/company/search', 'CompanyController@search')->name('company.search');
+
+
 Route::get('system-management/report', 'ReportController@index');
 Route::post('system-management/report/search', 'ReportController@search')->name('report.search');
 Route::post('system-management/report/excel', 'ReportController@exportExcel')->name('report.excel');
